@@ -82,7 +82,7 @@ public class HighGoal extends LinearOpMode {
     BNO055IMU imu;
     //ModernRoboticsI2cGyro   gyro    = null;                    // Additional Gyro device
 
-    static final double     COUNTS_PER_MOTOR_REV    = 1120 ;    // eg: TETRIX Motor Encoder (was 1140)
+    static final double     COUNTS_PER_MOTOR_REV    = 1140 ;    // eg: TETRIX Motor Encoder
     static final double     DRIVE_GEAR_REDUCTION    = 2.0 ;     // This is < 1.0 if geared UP
     static final double     WHEEL_DIAMETER_INCHES   = 2.95 ;     // For figuring circumference
     static final double     COUNTS_PER_INCH         = (COUNTS_PER_MOTOR_REV * DRIVE_GEAR_REDUCTION) /
@@ -225,6 +225,12 @@ sleep(100);
 
         flicker();
         sleep(10);
+
+        shootRing(1);    //shoot ring????cv
+        sleep(1000);
+
+        flickerDown();
+        sleep(100);
 
         shootRing(1);    //shoot ring????cv
         sleep(1000);
