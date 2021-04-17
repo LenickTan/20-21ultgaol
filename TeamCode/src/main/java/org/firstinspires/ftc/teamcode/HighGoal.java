@@ -177,20 +177,20 @@ clawClose();
     clawClose();
     sleep(1310);
 
-     driveForward(0.05, true); //sleep
+     driveForward(0.05, true); //move back
         sleep(1580);
 
         driveForward(0, false); //sleep
         sleep(1500);
 
-        turn(TURN_SPEED, false);
+        turn(TURN_SPEED, false); //turn to shoot
         sleep(1570);
 
-        turn(0, true); //turns to drop wobble goal
+        turn(0, true);
         sleep(1000);
 
 
-pulley(0.25);
+pulley(0.25); //lower pulley
 sleep(370);
 
 pulley(0);
@@ -225,12 +225,6 @@ sleep(100);
 
         flicker();
         sleep(10);
-
-        shootRing(1);    //shoot ring????cv
-        sleep(1000);
-
-        flickerDown();
-        sleep(100);
 
         shootRing(1);    //shoot ring????cv
         sleep(1000);
